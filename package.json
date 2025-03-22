@@ -1,12 +1,16 @@
 {
   "name": "my-project",
   "version": "1.0.0",
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "index.js",
+  "description": "Full-stack application",
   "scripts": {
     "install": "cd frontend && npm install && cd ../backend && npm install",
-    "build": "cd frontend && npm run build && cd ../backend && npm run build",
-    "start": "cd backend && npm start"
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.6.0"
   },
   "keywords": [],
   "author": "",
