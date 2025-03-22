@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Backend for student application",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
     "build": "echo \"Backend build step complete\"",
@@ -12,6 +13,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.0.3"
   },
   "devDependencies": {
